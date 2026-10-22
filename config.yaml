@@ -1,0 +1,115 @@
+# Central configuration for the Competitor Research Agent.
+# Edit this file to add/remove competitors or update ShutterCloud's own
+# feature set — every agent and the report generator reads from here.
+
+company:
+  name: ShutterCloud.ai
+  features:
+    - AI Face Recognition
+    - QR Code Photo Delivery
+    - Cloud Storage
+    - Gallery Sharing
+    - Album Selection
+    - Client Photo Delivery
+    - Photographer CRM
+    - Camera-to-Cloud (future)
+    - AI-powered workflows
+
+competitors:
+  indian:
+    - name: FotoOwl
+      website: https://www.fotoowl.ai
+      instagram: fotoowl.ai
+      youtube: null
+    - name: Samaro
+      website: https://www.samaro.co
+      instagram: samaro.co
+      youtube: null
+    - name: KwicPic
+      website: https://www.kwicpic.com
+      instagram: kwicpic
+      youtube: null
+    - name: PhotoMall
+      website: https://www.photomall.in
+      instagram: photomall.in
+      youtube: null
+    - name: LensDrop
+      website: https://www.lensdrop.com
+      instagram: lensdrop
+      youtube: null
+    - name: Lit App
+      website: https://www.litapp.in
+      instagram: litapp.in
+      youtube: null
+    - name: Kululu
+      website: https://www.kululu.co
+      instagram: kululu.co
+      youtube: null
+    - name: PicsDrop
+      website: https://www.picsdrop.com
+      instagram: picsdrop
+      youtube: null
+    - name: Kamero
+      website: https://www.kamero.io
+      instagram: kamero.io
+      youtube: null
+    - name: TurtlePic
+      website: https://www.turtlepic.com
+      instagram: turtlepic
+      youtube: null
+
+  global:
+    - name: Pixieset
+      website: https://pixieset.com
+      instagram: pixieset
+      youtube: Pixieset
+    - name: Pic-Time
+      website: https://home.pic-time.com
+      instagram: pictimeofficial
+      youtube: PicTime
+    - name: ShootProof
+      website: https://www.shootproof.com
+      instagram: shootproof
+      youtube: ShootProof
+    - name: SmugMug
+      website: https://www.smugmug.com
+      instagram: smugmug
+      youtube: SmugMug
+    - name: PicDrop
+      website: https://picdrop.com
+      instagram: picdrop
+      youtube: null
+    - name: Zenfolio
+      website: https://www.zenfolio.com
+      instagram: zenfolio
+      youtube: Zenfolio
+
+  indirect:
+    - name: Google Drive
+      website: https://workspace.google.com/products/drive/
+      instagram: null
+      youtube: null
+    - name: Dropbox
+      website: https://www.dropbox.com
+      instagram: dropbox
+      youtube: Dropbox
+    - name: Google Photos
+      website: https://photos.google.com
+      instagram: null
+      youtube: null
+    - name: WeTransfer
+      website: https://wetransfer.com
+      instagram: wetransfer
+      youtube: WeTransfer
+
+review_sources:
+  - g2.com
+  - capterra.com
+  - trustpilot.com
+  - play.google.com/store/apps
+  - apps.apple.com
+
+llm:
+  provider: gemini          # "ollama" (free, local), "anthropic" (needs ANTHROPIC_API_KEY), or "gemini" (needs GEMINI_API_KEY, free tier)
+  model: gemini-2.5-flash   # for anthropic provider, use e.g. claude-sonnet-5; for ollama, e.g. llama3.1:8b
+  max_tokens: 4096
